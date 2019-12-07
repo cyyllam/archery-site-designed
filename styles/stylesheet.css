@@ -6,7 +6,7 @@ a {
 }
 header {
   background-color: #03a3df;
-  height: 18rem;
+  /* height: 18rem; */
   width: 100%;
   margin: 0;
   position: fixed;
@@ -21,9 +21,8 @@ header .content-container {
   grid-template-columns: 1fr 1fr;
 }
 nav {
-  background-color: #ecb722;
+  /* background-color: #ecb722; */
   display: flex;
-
   align-items: center;
   justify-content: flex-end;
 
@@ -36,8 +35,12 @@ header nav ul {
 header nav ul li{
   margin: 0;
   list-style: none;
+  padding-right: .5rem;
 }
-
+li:nth-child(-n+2)::after {
+  padding-left: .5rem;
+  content: "/";
+}
 main {
   margin-top: 20rem;
 }
