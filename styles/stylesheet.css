@@ -9,7 +9,7 @@ main div p {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 10;
 }
-main div p:last-child{
+.content-container > p:last-child{
   font-style: italic;
 }
 header {
@@ -19,6 +19,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  height: 15rem;
 }
 .content-container {
   margin: 2rem 15rem;
@@ -27,12 +28,12 @@ header .content-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-nav {
+header nav {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-
 }
+
 header nav ul {
   display: flex;
   flex-direction: row;
@@ -44,15 +45,14 @@ header nav ul li{
   color: white;
   font-family: 'Oswald', sans-serif;
 }
-li:nth-child(-n+2)::after {
+header li:nth-child(-n+2)::after {
   padding-left: .5rem;
   content: "/";
 }
 main {
-  margin-top: 20rem;
+  margin-top: 19rem;
   margin-bottom: 10rem;
 }
-
 footer {
   position: relative;
   width: 100%;
@@ -69,4 +69,93 @@ footer p {
   font-family: 'Oswald', sans-serif;
   font-size: .7rem;
   color: white;
+}
+main nav {
+  position:fixed;
+  width: 100%;
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: center;
+  background-color: #444444;
+  top: 15rem;
+  left: 0;
+}
+main nav ul {
+  display: flex;
+  flex-direction: row;
+}
+main nav ul li{
+  margin: 0;
+  list-style: none;
+  padding-right: .5rem;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+}
+main li:first-child::after {
+  padding-left: .5rem;
+  content: "/";
+}
+.classes section,
+.private section {
+  background-color: #1b447f;
+  margin-bottom: 2.5rem;
+}
+article {
+  color: white;
+  margin: 2rem;
+  overflow:auto;
+}
+.classes article section,
+.private article section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.classes article p:nth-child(even),
+.private article p:nth-child(even) {
+  margin-left: 10rem;
+}
+.classes article p:first-child::before,
+.private article p:first-child::before{
+  content: "Description: ";
+  color: #ecb722;
+  font-weight: bold;
+}
+.classes article p:nth-child(3)::before{
+  content: "Prerequisite: ";
+  color: #ecb722;
+  font-weight: bold;
+}
+.classes article p:nth-child(2)::before,
+.private article p:nth-child(2)::before{
+  content: "Cost: ";
+  color: #ecb722;
+  font-weight: bold;
+}
+.classes article p:nth-child(4)::before{
+  content: "Schedule: ";
+  color: #ecb722;
+  font-weight: bold;
+}
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: .3rem;
+  padding-bottom: .5rem;
+  border-bottom: solid #ecb722;
+}
+#classes-start::before {
+  display: block;
+  content: " ";
+  margin-top: -20rem;
+  height: 20rem;
+  visibility: hidden;
+}
+#private-start::before {
+  display: block;
+  content: " ";
+  margin-top: -25rem;
+  height:25rem;
+  visibility: hidden;
+  pointer-events: none;
 }
