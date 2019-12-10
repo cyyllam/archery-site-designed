@@ -7,7 +7,7 @@ a {
 }
 main div p {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 10;
+  font-size: 1rem;
 }
 main .content-container > p:last-child{
   font-style: italic;
@@ -19,42 +19,51 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  height: 15rem;
+  height: 12rem;
 }
 .content-container {
   margin: 2rem 15rem;
 }
+footer .content-container,
 header .content-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+footer nav,
 header nav {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
-
+footer nav ul,
 header nav ul {
   display: flex;
   flex-direction: row;
 }
+footer nav ul li,
 header nav ul li{
   margin: 0;
   list-style: none;
-  padding-right: .5rem;
+  padding-right: .7rem;
   color: white;
   font-family: 'Oswald', sans-serif;
 }
+nav ul li a:hover,
+nav ul li:hover a{
+  color: white;
+  font-weight: bolder;
+  font-size: 1.1rem;
+}
 header li:nth-child(-n+2)::after {
-  padding-left: .5rem;
+  padding-left: .7rem;
   content: "/";
 }
-nav ul li:hover{
-  color: white;
-  font-weight: bold;
+i {
+  font-size: 2rem;
+  padding-left: 1rem;
 }
 main {
-  margin-top: 19rem;
+  margin-top: 16rem;
   margin-bottom: 10rem;
 }
 video {
@@ -85,9 +94,10 @@ main nav {
   /* flex-direction: row; */
   justify-content: center;
   background-color: #444444;
-  top: 15rem;
+  top: 12rem;
   left: 0;
 }
+
 main nav ul {
   display: flex;
   flex-direction: row;
@@ -171,8 +181,8 @@ h2 {
 #private-start::before {
   display: block;
   content: " ";
-  margin-top: -21rem;
-  height:21rem;
+  margin-top: -18rem;
+  height:18rem;
   visibility: hidden;
   pointer-events: none;
 }
