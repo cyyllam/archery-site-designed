@@ -54,7 +54,7 @@ nav ul li:hover a{
   font-weight: bolder;
   font-size: 1.1rem;
 }
-header li:nth-child(-n+2)::after {
+header li:nth-child(-n+3)::after {
   padding-left: .7rem;
   content: "/";
 }
