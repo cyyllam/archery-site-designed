@@ -26,7 +26,11 @@
     <main>
       <div class="content-container">
         <h1>Contact Us</h1>
-        <p>Fill in the form below with any inquiries or comments and our staff will be in touch.</p>
+        <p class="contact-form-intro">You can contact us via email, phone, or on foot.</p>
+
+        <p>Phone: (253)555-1010</p>
+        <p>Email: archery-education@example.com</p>
+        <p>You can also fill out the form below with any inquiries or comments and our staff will be in touch.</p>
         <form class="" action="index.html" method="post">
           <label for="title">
             Title:
@@ -48,22 +52,17 @@
             Comments or questions: <textarea name="textarea" rows="8" cols="80"></textarea>
           </label>
 
-          <p>Prefered Method of contact:</p>
-          <!-- <label for="emailSelect">
-            Email:  -->
-          <!-- <input type="checkbox" name="prefered-contact" value="email" id="emailSelect"> Email -->
-          <!-- </label>
-          <label for="phoneSelect">
-            Phone:  -->
+          <label for="prefered-contact">Prefered Method(s) of contact:</label>
+          <input type="checkbox" name="prefered-contact" value="email" id="emailSelect"> Email
           <input type="checkbox" name="prefered-contact" value="phone" id="phoneSelect"> Phone
+
+          <label for="emailAddress">Email Address: </label>
+          <input type="email" name="email-address" id="emailAddress">
+
           <label for="phoneNumber">Phone Number: </label>
           <input type="tel" name="phone-number" id="phoneNumber">
-          <!-- </label> -->
 
-
-          <!-- <label for="emailAddress">Email Address: <input type="email" name="email-address" id="emailAddress"></label> -->
-
-          <!-- <input type="submit" name="submit" value="Submit"> -->
+          <input type="submit" name="submit" value="Submit">
         </form>
 
       </div>
@@ -76,6 +75,8 @@
           <p>Phone: (253)555-1010</p>
           <p>Email: archery-education@example.com</p>
         </section>
+
+
 
         <nav>
           <ul>
@@ -90,6 +91,7 @@
             </li>
           </ul>
       </nav>
+
       </div>
 
     </footer>

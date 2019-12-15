@@ -193,6 +193,20 @@ h2 {
 /* Contact form */
 label {
   display: block;
+  font-family: 'Oswald', sans-serif;
+}
+label,
+textarea,
+select,
+input {
+  margin-top: 1rem;
+}
+textarea {
+  vertical-align: top;
+}
+input #emailSelect,
+input #phoneSelect{
+  font-family: 'Oswald', sans-serif;
 }
 label[for="phoneNumber"],
 #phoneNumber{
@@ -202,7 +216,20 @@ label[for="emailAddress"],
 #emailAddress {
   display: none;
 }
-input[id="phoneSelect"]:checked + label[for="phoneNumber"],
-input[id="phoneSelect"]:checked + label + #phoneNumber{
+input[id="phoneSelect"]:checked + label + input + label[for="phoneNumber"],
+input[id="phoneSelect"]:checked + label + input + label + #phoneNumber{
   display: block;
+}
+input[id="emailSelect"]:checked + input + label[for="emailAddress"],
+input[id="emailSelect"]:checked + input + label + #emailAddress{
+  display: block;
+}
+input[type="submit"] {
+  display: block;
+  padding: .5rem 1rem;
+}
+.contact-form-intro::after {
+  content: "\A""528 Nock Point Ln \A""Tacoma, WA 98412";
+  display: block;
+  white-space: pre;
 }
