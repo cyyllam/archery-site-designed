@@ -190,3 +190,7 @@ h2 {
   visibility: hidden;
   pointer-events: none;
 }
+/* Contact form */
+label{
+  display: block;
+}
