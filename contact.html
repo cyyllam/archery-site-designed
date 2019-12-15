@@ -30,8 +30,8 @@
         <form class="" action="index.html" method="post">
           <label for="title">
             Title:
-            <select class="" name="title">
-              <option value="None"></option>
+            <select class="" name="title" id="title">
+              <option value="None">None</option>
               <option value="Ms">Ms.</option>
               <option value="Mrs">Mrs.</option>
               <option value="Mr">Mr.</option>
@@ -47,17 +47,23 @@
           <label for="textarea">
             Comments or questions: <textarea name="textarea" rows="8" cols="80"></textarea>
           </label>
-          <label for="prefered-contact">
-            Prefered Method of contact:
-            <label for="email">Email: <input type="radio" name="prefered-contact" value="email"></label>
 
-            <label for="phone">Phone: <input type="radio" name="prefered-contact" value="phone"></label>
-          </label>
-          <label for="">Phone Number: <input type="tel" name="tel" value=""></label>
-          <label for="">Email Address: <input type="email" name="email" value=""></label>
-          <input type="submit" name="submit" value="Submit">
+          <p>Prefered Method of contact:</p>
+          <!-- <label for="emailSelect">
+            Email:  -->
+          <!-- <input type="checkbox" name="prefered-contact" value="email" id="emailSelect"> Email -->
+          <!-- </label>
+          <label for="phoneSelect">
+            Phone:  -->
+          <input type="checkbox" name="prefered-contact" value="phone" id="phoneSelect"> Phone
+          <label for="phoneNumber">Phone Number: </label>
+          <input type="tel" name="phone-number" id="phoneNumber">
+          <!-- </label> -->
 
 
+          <!-- <label for="emailAddress">Email Address: <input type="email" name="email-address" id="emailAddress"></label> -->
+
+          <!-- <input type="submit" name="submit" value="Submit"> -->
         </form>
 
       </div>

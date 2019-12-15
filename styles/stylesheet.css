@@ -191,6 +191,18 @@ h2 {
   pointer-events: none;
 }
 /* Contact form */
-label{
+label {
+  display: block;
+}
+label[for="phoneNumber"],
+#phoneNumber{
+  display: none;
+}
+label[for="emailAddress"],
+#emailAddress {
+  display: none;
+}
+input[id="phoneSelect"]:checked + label[for="phoneNumber"],
+input[id="phoneSelect"]:checked + label + #phoneNumber{
   display: block;
 }
