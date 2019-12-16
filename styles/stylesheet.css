@@ -216,14 +216,16 @@ label[for="emailAddress"],
 #emailAddress {
   display: none;
 }
-input[id="phoneSelect"]:checked + label + input + label[for="phoneNumber"],
-input[id="phoneSelect"]:checked + label + input + label + #phoneNumber{
+
+input[id="phoneSelect"]:checked + label + label[for="phoneNumber"],
+input[id="phoneSelect"]:checked + label + label > #phoneNumber{
   display: block;
 }
 input[id="emailSelect"]:checked + input + label[for="emailAddress"],
-input[id="emailSelect"]:checked + input + label + #emailAddress{
-  display: block;
+input[id="emailSelect"]:checked + input + label > #emailAddress{
+  display:block;
 }
+
 input[type="submit"] {
   display: block;
   padding: .5rem 1rem;
