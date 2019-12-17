@@ -64,11 +64,28 @@ i {
 }
 main {
   margin-top: 16rem;
-  margin-bottom: 10rem;
+  margin-bottom: 12rem;
+}
+figure {
+  float:right;
+  border: thin #c0c0c0 solid;
+  display: flex;
+  flex-flow: column;
+  max-width: 380px;
+  padding: 15px;
+  margin: 0 0 1rem 1rem;
+}
+figcaption {
+  float:right;
+  background-color: #222;
+  color: #fff;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 15px;
+  text-align: center;
 }
 video {
   float: right;
-  margin: 0 0 1rem 1rem;
+  /* margin: 0 0 1rem 1rem; */
 }
 footer {
   position: relative;
@@ -77,10 +94,6 @@ footer {
   background-size:auto;
   margin: auto;
   overflow: auto;
-}
-.home-footer {
-  position: absolute;
-  bottom: 0;
 }
 footer div {
   margin-top: 5rem;
@@ -117,6 +130,7 @@ main li:first-child::after {
   padding-left: .5rem;
   content: "/";
 }
+
 .classes section,
 .private section {
   background-color: #1b447f;
@@ -191,14 +205,14 @@ h2 {
   pointer-events: none;
 }
 /* Contact form */
+button, input, select, textarea {
+  font-family: 'Oswald', sans-serif;
+  font-size: 100%;
+  margin-top: 1rem;
+}
 label {
   display: block;
   font-family: 'Oswald', sans-serif;
-}
-label,
-textarea,
-select,
-input {
   margin-top: 1rem;
 }
 textarea {
@@ -216,7 +230,6 @@ label[for="emailAddress"],
 #emailAddress {
   display: none;
 }
-
 input[id="phoneSelect"]:checked + label + label[for="phoneNumber"],
 input[id="phoneSelect"]:checked + label + label > #phoneNumber{
   display: block;
@@ -225,7 +238,6 @@ input[id="emailSelect"]:checked + input + label[for="emailAddress"],
 input[id="emailSelect"]:checked + input + label > #emailAddress{
   display:block;
 }
-
 input[type="submit"] {
   display: block;
   padding: .5rem 1rem;
