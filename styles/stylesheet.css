@@ -21,8 +21,12 @@ header {
   left: 0;
   height: 12rem;
 }
+header img {
+  max-width: 200px;
+  height: auto;
+}
 .content-container {
-  margin: 2rem 15rem;
+  margin: 2vw 15vw;
 }
 footer .content-container,
 header .content-container {
